@@ -23,8 +23,8 @@ hemisphereimageurls = {}
 
 #@NOTE: please replace the path with your actual path to the chromedriver
 #Set Chrome browser path
-executable_path = {'executable_path': '/Users/anuaj/bin/chromedriver'}
-browser = Browser('chrome', **executable_path, headless=True)
+executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+browser = Browser('chrome', **executable_path, headless=False)
 
 #Function to get Beatifulsoup oject for the given url and parser
 def getSoupObject(url,parser,sleep_time):
