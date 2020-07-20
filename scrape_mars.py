@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-#Set global variables to store the data from the funtions
-#Deafult parser - it can be orriden at fucntion level
 parser= 'html.parser'
 #Default browser wait time to allow page load. 
 wait_time = 5
@@ -85,8 +83,7 @@ def scrape():
 def getMarsNews():
        
     #Mars news URL
-    mars_news_url = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
-    
+    mars_news_url = 'https://mars.nasa.gov/news/'
     #Call function to get Beautifulsoup object
     mars_news_soup =  getSoupObject(mars_news_url,parser,wait_time)
 
